@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Partial overhsadowing example: presentation order playground</title>
+
+</head>
+
+
+<!-- 		
+		by Frode Eika Sandnes
+ -->
+
+<body>
+	<div style="width: 200px;position: absolute;top: 0px; z-index: 2; background: rgb(255, 0, 157)">
+		<p>This is the FIRST element in the html file.</p>
+	</div>
+
+	<div style="width: 200px;position: absolute;top: 10px;left:100px;z-index: 1;background: greenyellow">
+		<p>This is the SECOND element in the html file.</p>
+	</div>
+</body>
+</html>

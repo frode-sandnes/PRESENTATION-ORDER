@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<!-- By Frode Eika Sandnes, Oslo Metropolitan University, Oslo, Norway, July 2021 -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Automatic grid example: presentation order playground</title>
+	<style>
+
+.parent 
+		{
+		gap: 1em;
+		display: grid;		
+  		align-items: center;
+  		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));		
+		}
+
+.child1 
+	{	
+	padding: 1em;		
+	background: rgb(255, 0, 157);	
+	}
+.child2 
+	{
+	padding: 1em;		
+	background: greenyellow;			
+	}
+.child3 
+	{
+	padding: 1em;		
+	background: rgb(0, 150, 250);			
+	}
+.child4 
+	{
+	padding: 1em;		
+	background: rgb(252, 6, 6);			
+	}	
+.child5 
+	{
+	padding: 1em;		
+	background: rgb(0, 255, 191);			
+	}														
+	</style>
+
+</head>
+
+
+
+
+	<body>
+		<h1>Example with automatic grid</h1>
+
+		<div class="parent">
+			<div class="child1">
+				<p>This is the FIRST element in the html file.</p>
+			</div>
+
+			<div class="child2">
+				<p>This is the SECOND element in the html file.</p>
+			</div>
+
+			<div class="child3">
+				<p>This is the THIRD element in the html file.</p>
+			</div>
+
+			<div class="child4">
+				<p>This is the FOURTH element in the html file.</p>
+			</div>
+
+			<div class="child5">
+				<p>This is the FIFTH element in the html file.</p>
+			</div>
+		</div>
+	</body>
+</html>

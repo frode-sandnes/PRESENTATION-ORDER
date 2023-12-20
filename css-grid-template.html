@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<!-- By Frode Eika Sandnes, Oslo Metropolitan University, Oslo, Norway, July 2021 -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Grid template order example: presentation order playground</title>
+	<style>
+		.parent 
+			{
+			display: grid;
+			grid-template: 
+				"child2 child1"; 
+			}
+
+		.child1 
+			{
+			grid-area: child1;				
+			background: rgb(255, 0, 157);	
+			}
+		.child2 
+			{
+			grid-area: child2;				
+			background: greenyellow;			
+			}			
+	</style>
+
+</head>
+
+
+
+
+	<body>
+		<h1>Example with explicit box ordering using css grid area template.</h1>
+
+		<div class="parent">
+			<div class="child1">
+				<p>This is the FIRST element in the html file.</p>
+			</div>
+
+			<div class="child2">
+				<p>This is the SECOND element in the html file.</p>
+			</div>
+		</div>
+	</body>
+</html>

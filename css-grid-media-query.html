@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<!-- By Frode Eika Sandnes, Oslo Metropolitan University, Oslo, Norway, July 2021 -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Grid order example: presentation order playground</title>
+	<style>
+
+
+.parent 
+		{
+		gap: 1em;
+		display: grid;		
+		}
+
+@media screen 
+  and (max-width: 399px) 
+  		{ 
+		.parent 
+			{
+			grid-template: 
+				"child2 child1 child3 child4 child5"; 
+			}
+		}
+
+@media screen 
+  and (min-width: 400px) 
+  and (max-width: 799px) 
+  		{ 
+		.parent 
+			{
+			grid-template: 
+				"child1 child2 child3 child4 child5"; 
+			}
+		}		
+
+
+@media screen 
+  and (min-width: 799px) 
+  and (max-width: 999px) 
+  		{ 
+		.parent 
+			{
+			grid-template: 
+				"child5 child4 child3 child2 child1"; 
+			}
+		}		
+
+@media screen 
+  and (min-width: 1000px) 
+  and (max-width: 1199px) 
+  		{ 
+		.parent 
+			{
+			grid-template: 
+				"child4 child5 child3 child1 child2"; 
+			}
+		}		
+
+@media screen 
+  and (min-width: 1200px) 
+  		{ 
+		.parent 
+			{
+			grid-template: 
+				"child4 child1 child3 child5 child2"; 
+			}
+		}				
+
+
+		.child1 
+			{
+			grid-area: child1;				
+			background: rgb(255, 0, 157);	
+			}
+		.child2 
+			{
+			grid-area: child2;				
+			background: greenyellow;			
+			}
+		.child3 
+			{
+			grid-area: child3;				
+			background: rgb(0, 150, 250);			
+			}
+		.child4 
+			{
+			grid-area: child4;				
+			background: rgb(252, 6, 6);			
+			}	
+		.child5 
+			{
+			grid-area: child5;				
+			background: rgb(0, 255, 191);			
+			}														
+	</style>
+
+</head>
+
+
+	<body>
+		<h1>Example with explicit box ordering using css grid area template.</h1>
+
+		<div class="parent">
+			<div class="child1">
+				<p>This is the FIRST element in the html file.</p>
+			</div>
+
+			<div class="child2">
+				<p>This is the SECOND element in the html file.</p>
+			</div>
+
+			<div class="child3">
+				<p>This is the THIRD element in the html file.</p>
+			</div>
+
+			<div class="child4">
+				<p>This is the FOURTH element in the html file.</p>
+			</div>
+
+			<div class="child5">
+				<p>This is the FIFTH element in the html file.</p>
+			</div>
+		</div>
+	</body>
+</html>

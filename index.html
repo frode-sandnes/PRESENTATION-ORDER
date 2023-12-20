@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection of examples: presentation order playground</title>
+</head>
+
+ <!-- 		
+		by Frode Eika Sandnes
+ -->
+
+<body>
+    <h1>Web Content Visibility Analysis Examples</h1>
+    <p>Presentation order playground. As documented in:</p>
+    <p>Frode Eika Sandnes, A Review of How Web Content Order and Omission Unintentionally Can Vary for Different User Cohorts, In: Proceedings of HCI International 2024, Springer, (2024)</p>
+    <p>Several of the examples are triggered by activating strong zoom/magnification in the browser. The zoom will cause elements to disappear and/or change order.</p>
+
+    <ul>
+        <li><a href="plain.html">plain</a>: Small and simple document with no issues (reference).</li>
+    </ul>
+    
+    <h2>Content order</h2>
+    <ul>
+        <li><a href="floating.html">floating</a>: Document with floating elements.</li>
+        <li><a href="force-swap-top-bottom.html">force-swap-top-botto</a>: Document with hard-coded positions in opposite order.</li>
+        <li><a href="height-swap.html">height-swap</a>: Box order depends on window height.</li>
+        <li><a href="width-swap.html">width-swap</a>: Box order depends on window width.</li>
+        <li><a href="flexbox-order.html">flexbox-order</a>: Flexbox order (swap) set in the style definition.</li>
+        <li><a href="flex-wrap-reverse.html">flex-wrap-reverse</a>: Flexbox wrap-reverse  (swap) depending on width.</li>
+        <li><a href="css-grid-template.html">css-grid-template</a>: Css grid template order specification (swao) set in the style definition.</li>
+        <li><a href="mediatype-order.html">mediatype-order</a>: Use media type width to set flexbox order (swao) set in the style definition.</li>
+        <li><a href="css-grid-media-query.html">css-grid-media-query</a>: Use media type width in px to set grid layout (swao) with five "zones".</li>
+        <li><a href="css-grid-media-query-em.html">css-grid-media-query-em</a>: Use media type width in em to set grid layout (swao) with five "zones".</li>
+        <li><a href="css-grid-auto.html">css-grid-auto</a>: CSS grid with auto template, no problems.</li>
+        <li><a href="hyphenation.html">hyphenation</a>: breaking up a text passage due to long word.</li>
+    </ul>
+    
+    <h2>Content omission (hiding)</h2>
+        <ul>
+            <li><a href="multi-page-plain.html">multi-page-plain</a>: A longer document with horizontal scroll.</li>
+            <li><a href="multi-page-fixed.html">multi-page-fixed</a>: A longer document with element fixed to top.</li>
+            <li><a href="multi-page-sticky.html">multi-page-sticky</a>: A longer document with sticky element.</li>
+            <li><a href="overshadowing.html">overshadowing</a>: One box placed on top of another. First on top.</li>
+            <li><a href="overshadowing-default.html">overshadowing-default</a>: One box placed on top of another. No z-index settings.</li>
+            <li><a href="overshadowing-reverse.html">overshadowing-reverse</a>: One box placed on top of another. Reversed z-index - second on top.</li>
+            <li><a href="overshadowing-horizontal.html">overshadowing-horizontal</a>: One box placed on top of another if width is too narrow.</li>
+            <li><a href="overshadowing-partial.html">overshadowing-partial</a>: One box is partially placed on top of another.</li>
+            <li><a href="outside-view.html">outside-view</a>: One box is positioned outside the viewport so that it becomes invisible.</li>
+            <li><a href="zero-contrast.html">zero-contrast</a>: The same text and background colours makes the text visually imperceivable.</li>
+            <li><a href="visibility-selector.html">visibility-selector</a>: The first box is hidden with the visibllity selector.</li>
+            <li><a href="display-none.html">display-none</a>: Hiding the first box with "display: none".</li>
+            <li><a href="opacity.html">opacity</a>: Hiding the first box with opacity.</li>
+            <li><a href="soft-hyphenation.html">soft-hyphenation</a>: breaking the long word with soft hyphenation gives no problems.</li>
+            <li><a href="console.html">Content in the console.</a>: content is only visible from the console window.</li>
+            <li><a href="comment.html">Content in html comment.</a>: content is only visible by viewing the page source.</li>
+        </ul>
+        <p>by Frode Eika Sandnes, Oslo Metropolitan University, December, 2023.</p>
+    </body>
+</html>
